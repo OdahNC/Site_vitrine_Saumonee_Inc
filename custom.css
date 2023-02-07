@@ -1,10 +1,25 @@
-
 /**************************/
 /* HEADER OF THE DOCUMENT */
 /**************************/
 
 #navbar {
-    background-color: #80c0ff;
+  background-color: #80c0ff;
+}
+
+#introduction h2 {
+  color: #80c0ff;
+}
+
+#introduction-important-sentence {
+  font-weight: 400;
+}
+
+#introduction-important-sentence span {
+  text-decoration: underline;
+}
+
+#introduction a {
+  background-color: #80c0ff;
 }
 
 /************/
@@ -12,5 +27,5 @@
 /************/
 
 .pictures-title {
-    color: #80c0ff;
+  color: #80c0ff;
 }
