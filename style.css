@@ -1,0 +1,113 @@
+#facebook {
+    border: 2px solid #3b5998; border-radius: 0.25em; padding: 0.5em;
+    box-shadow: 0 0 0px 1px #3b5998,
+    0 0 10px 2px #4a77d8,
+    inset 0 0 0px 1px #3b5998,
+    inset 0 0 10px 2px #4a77d8;
+    transition: 100ms;
+}
+
+#facebook:hover {
+    box-shadow: 0 0 0px 1px #3b5998,
+        0 0 10px 2px #4a77d8,
+        inset 0 0 0px 1px #3b5998,
+        inset 0 0 30px 2px #4a77d8;
+    text-shadow: 0 0 10px #4a77d8;
+    transform: translateY(-5px);
+}
+
+#facebook:active {
+    box-shadow: 0 0 0px 1px #3b5998,
+        0 0 25px 2px #4a77d8,
+        inset 0 0 0px 1px #3b5998,
+        inset 0 0 30px 2px #4a77d8;
+    transform: translateY(1px);
+}
+
+#twitter {
+    border: 2px solid #00ACEE; border-radius: 0.25em; padding: 0.5em;
+    box-shadow: 0 0 0px 1px #00ACEE,
+    0 0 10px 2px #12a4dd,
+    inset 0 0 0px 1px #00ACEE,
+    inset 0 0 10px 2px #12a4dd;
+    transition: 100ms;
+}
+
+#twitter:hover {
+    box-shadow: 0 0 0px 1px #00ACEE,
+        0 0 10px 2px #12a4dd,
+        inset 0 0 0px 1px #00ACEE,
+        inset 0 0 30px 2px #12a4dd;
+    text-shadow: 0 0 10px #12a4dd;
+    transform: translateY(-5px);
+}
+
+#twitter:active {
+    box-shadow: 0 0 0px 1px #00ACEE,
+        0 0 25px 2px #12a4dd,
+        inset 0 0 0px 1px #00ACEE,
+        inset 0 0 30px 2px #12a4dd;
+    transform: translateY(1px);
+}
+
+#tiktok {
+    border: 2px solid #000000; border-radius: 0.25em; padding: 0.5em;
+    box-shadow: 0 0 0px 1px #000000,
+    0 0 10px 2px #000000,
+    inset 0 0 0px 1px #000000,
+    inset 0 0 10px 2px #000000;
+    text-shadow: 2px 0px 1px #FD3084, -1px -1.75px 1px #25F4EE;
+    transition: 100ms;
+}
+
+#tiktok:hover {
+    border: 2px solid #FE2C55; border-radius: 0.25em; padding: 0.5em;
+    box-shadow: 0 0 0px 1px #FE2C55,
+        0 0 10px 2px #d13050,
+        inset 0 0 0px 1px #FE2C55,
+        inset 0 0 30px 2px #d13050;
+    transform: translateY(-5px);
+}
+
+#tiktok:active {
+    border: 2px solid #25F4EE; border-radius: 0.25em; padding: 0.5em;
+    box-shadow: 0 0 0px 1px #25F4EE,
+        0 0 25px 2px #2bbeba,
+        inset 0 0 0px 1px #25F4EE,
+        inset 0 0 30px 2px #2bbeba;
+    transform: translateY(1px);
+}
+
+#instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 0.25em;
+    padding: 0.5em;
+    border-image: linear-gradient(45deg, #FCAF45, #C13584) 1;
+    box-shadow: 0 0 0px 1px #FCAF45,
+    0 0 10px 2px #C13584,
+    inset 0 0 0px 1px #FCAF45,
+    inset 0 0 10px 2px #C13584;
+    transition: 100ms;
+}
+
+#instagram:hover {
+    border-image: linear-gradient(45deg, #FCAF45, #C13584) 1;
+    box-shadow: 0 0 0px 1px #FCAF45,
+        0 0 10px 2px #FCAF45,
+        inset 0 0 0px 1px #FCAF45,
+        inset 0 0 30px 2px #FCAF45;
+    transform: translateY(-5px);
+}
+
+#instagram:active {
+    border-image: linear-gradient(45deg, #FCAF45, #C13584) 1;
+    box-shadow: 0 0 0px 1px #FCAF45,
+        0 0 25px 2px #FCAF45,
+        inset 0 0 0px 1px #FCAF45,
+        inset 0 0 30px 2px #FCAF45;
+    transform: translateY(1px);
+}
