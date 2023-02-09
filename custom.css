@@ -30,3 +30,9 @@
 .pictures-title {
   color: #80c0ff;
 }
+
+#conclusion {
+  border: 1px solid #80c0ff;
+  border-radius: 10px 10px;
+  box-shadow: 10px 10px 10px rgb(200, 200, 200);
+}
