@@ -53,7 +53,7 @@
           <div class="col-md-5">
             <img
               src="./img/DSC_3652-682x1024.jpg"
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid img-thumbnail mx-4"
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid img-thumbnail mx-4 bigImg"
               width="400"
               alt=""
             />
@@ -80,7 +80,7 @@
           <div class="col-md-5 order-md-1">
             <img
               src="./img/famille021-1024x681.jpg"
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid img-thumbnail mx-auto"
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid img-thumbnail mx-auto bigImg"
               width="600"
               alt=""
             />
@@ -106,7 +106,7 @@
           <div class="col-md-5">
             <img
               src="./img/louane0068-1024x682.jpg"
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid img-thumbnail mx-auto"
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid img-thumbnail mx-auto bigImg"
               width="600"
               alt=""
             />
@@ -117,66 +117,178 @@
       
       <!-- **************************************** -->
 
-      <section class="container pb-4">
+      <!-- Carousel -->
+      <section class="container-md pb-4 text-center">
+
+        <hr class="featurette-divider">
+
+        <h2 class="my-4">Photos en vrac</h2>
+        <p class="fs-4">Voici d'autres photos prise pendant mon temps libre</p>
+
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/marchénoumea.webp" class="d-block w-100" alt="photo du marché de Nouméa">
+            </div>
+            <div class="carousel-item">
+              <img src="img/baiedescitrons.jpg" class="d-block w-100" alt="photo de la baie des citrons">
+            </div>
+            <div class="carousel-item">
+              <img src="img/piscinemeridien.webp" class="d-block w-100" alt="photo de la piscine de l'hotel Le Meridien">
+            </div>
+            <div class="carousel-item">
+              <img src="img/placedescocotiers.webp" class="d-block w-100" alt="photo de la place des cocotiers">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Formulaire de contact -->
+
+      <section class="container-md pb-4">
 
         <hr class="featurette-divider">
 
         <h2 class="text-center my-4">Formulaire de contact</h2>
         <form>
+          <!-- Première ligne -->
           <div class="row g-4 justify-content-center">
-            <div class="col-4">
+            <!-- Input Prénom -->
+            <div class="col-lg-4 col-8">
               <label for="firstName" class="visually-hidden">Prénom</label>
               <input type="text" class="form-control" id="firstName" placeholder="Prénom">          
             </div>
-            <div class="col-4">
+            <!-- Input Nom -->
+            <div class="col-lg-4 col-8">
               <label for="lastName" class="visually-hidden">Nom</label>
               <input type="text" class="form-control" id="lastName" placeholder="Nom">          
             </div>
           </div>
+          <!-- Deuxième ligne -->
           <div class="row mt-4 justify-content-center">
+            <!-- Input Adresse mail -->
             <div class="col-8">
               <label for="email" class="visually-hidden">Adresse mail</label>
               <input type="email" class="form-control" id="email" placeholder="name@example.com">
             </div>
           </div>
+          <!-- Troisième ligne -->
           <div class="row mt-2 justify-content-center">
+            <!-- Input Objet -->
             <div class="col-8">
               <label for="emailSubject" class="form-label">Objet</label>
               <input type="text" class="form-control" id="emailSubject" placeholder="Renseignement, réserver une séance, ...">
             </div>
           </div>
+          <!-- Quatrième ligne -->
           <div class="row mt-2 justify-content-center">
+            <!-- Input Message -->
             <div class="col-8">
               <label for="message" class="visually-hidden">Message</label>
-              <textarea class="form-control" id="message" rows="5" placeholder="Votre demande"></textarea>
+              <textarea class="form-control" id="message" rows="5" placeholder="Message"></textarea>
             </div>
           </div>
 
+          <!-- Bouton Envoyer -->
           <div class="row mt-4 justify-content-center">
             <div class="col-1">
-              <button type="submit" class="btn btn-primary">Envoyer</button>
+              <button type="submit" class="btn btn-primary fs-5">Envoyer</button>
             </div>
           </div>
 
         </form>
       </section>
     </main>
+
+    <!-- Footer -->
     <footer>
 
       <hr class="featurette-divider">
 
       <div class="container-fluid text-center mb-3">
-        <div class="row justify-content-center align-items-center">
-          <span class="col-2 mx3" style="color: #2e7fcf;">thierry.brial@outlook.fr</span>
+        <!-- Contact Email -->
+        <span class="fs-3" style="color: #2e7fcf;">thierry.brial@outlook.fr</span>
 
-          <span id="facebook" class="col-1 mx-3"><i class="fab fa-facebook-f fa-xl" style="color: #3b5998" title="Facebook"></i></span>
-          <span id="twitter" class="col-1 mx-3"><i class="fa-brands fa-twitter fa-xl" style="color: #00ACEE" title="Twitter"></i></span>
-          <span id="tiktok" class="col-1 mx-3"><i class="fa-brands fa-tiktok fa-xl" style="color: #000000" title="Tik Tok"></i></span>
-          <span id="instagram" class="col-1 mx-3"><i class="fa-brands fa-instagram fa-xl" title="Instagram"></i></span>
-         
-          <span class="col-2 mx3" style="color: #2e7fcf;">(+687) 12.34.89</span>
+        <div class="row justify-content-center align-items-center my-4">
+
+          <!-- Contact Réseaux sociaux -->
+          <span id="facebook" class="col-2 mx-3"><i class="fab fa-facebook-f fa-xl" style="color: #3b5998" title="Facebook"></i></span>
+          <span id="twitter" class="col-2 mx-3"><i class="fa-brands fa-twitter fa-xl" style="color: #00ACEE" title="Twitter"></i></span>
+          <span id="tiktok" class="col-2 mx-3"><i class="fa-brands fa-tiktok fa-xl" style="color: #000000" title="Tik Tok"></i></span>
+          <span id="instagram" class="col-2 mx-3"><i class="fa-brands fa-instagram fa-xl" title="Instagram"></i></span>
+
         </div>
+        
+         <!-- Contact Tel -->
+         <span class="fs-3" style="color: #2e7fcf;">(+687) 12.34.89</span>
       </div>
     </footer>
+
+  <!-- Image Modal -->
+  <div id="imgModal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content -->
+    <img class="img-content" id="bigImg">
+    
+  </div>
+
+  <!-- Carousel Modal -->
+  <div id="carouselModal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content -->
+    <div id="bigCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#bigCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#bigCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#bigCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#bigCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/marchénoumea.webp" class="d-block w-100" alt="photo du marché de Nouméa">
+        </div>
+        <div class="carousel-item">
+          <img src="img/baiedescitrons.jpg" class="d-block w-100" alt="photo de la baie des citrons">
+        </div>
+        <div class="carousel-item">
+          <img src="img/piscinemeridien.webp" class="d-block w-100" alt="photo de la piscine de l'hotel Le Meridien">
+        </div>
+        <div class="carousel-item">
+          <img src="img/placedescocotiers.webp" class="d-block w-100" alt="photo de la place des cocotiers">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#bigCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#bigCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+  </div>
+
+  <script src="script.js"></script>
   </body>
 </html>
