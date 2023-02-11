@@ -20,8 +20,13 @@ var modalCarousel = document.getElementById("carouselModal");
 // Récupére le carousel et créer l'évenement d'agrandissement
 var carousel = document.getElementById("carousel");
 
-carousel.onclick = function(){
-    modalCarousel.style.display = "block";
+// Récupère l'image affiche sur le carousel
+var carouselActiveImg = document.getElementsByClassName("carousel-item active")
+
+carousel.onclick = function(event){
+    if (event.target == carouselActiveImg[0]) {
+        modalCarousel.style.display = "block";
+    }
 }
 
 // Récupére les boutons "X" des modals
