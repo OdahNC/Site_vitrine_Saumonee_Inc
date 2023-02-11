@@ -43,3 +43,18 @@ window.onclick = function(event) {
         modalCarousel.style.display = "none";
     }
 }
+
+
+// Récupère le bouton pour remonter la page
+let backTop = document.getElementById("arrowTop");
+
+// Quand l'utilisateur descend la page, le bouton apparait
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    backTop.style.display = "block";
+  } else {
+    backTop.style.display = "none";
+  }
+}
