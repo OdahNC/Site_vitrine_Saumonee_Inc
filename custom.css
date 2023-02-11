@@ -1,14 +1,14 @@
-/**************************/
-/* HEADER OF THE DOCUMENT */
-/**************************/
+/* Navbar */
 
 #navbar {
   background-color: #b0b0b0;
   opacity: 95%;
 }
 
+/* Introduction */
+
 #introduction h2 {
-  color: #80c0ff;
+  color: black;
 }
 
 #introduction-important-sentence {
@@ -20,25 +20,129 @@
 }
 
 #introduction a {
-  background-color: #80c0ff;
+  background-color: #b0b0b0;
 }
 
-/************/
-/* PICTURES */
-/************/
+/* Pictures */
 
 .pictures-title {
-  color: #80c0ff;
+  color: #2992fb;
 }
 
 #conclusion {
   border: 1px solid #80c0ff;
   border-radius: 10px 10px;
-  box-shadow: 10px 10px 10px rgb(200, 200, 200);
+  box-shadow: 5px 5px 5px #80c0ff;
+}
+
+#contact-button {
+  background-color: #80c0ff;
 }
 
 body {
   background: linear-gradient(0deg, #b0b0b0 30%, #80c0ff);
+}
+
+/* Carousel */
+
+#carousel .carousel-item {
+  cursor: pointer;
+}
+
+#carousel .carousel-item:hover {
+  opacity: 0.7;
+}
+
+#carousel .carousel-item img {
+  object-fit: scale-down;
+  object-position: center;
+  overflow: hidden;
+  height: 55vh;
+}
+
+#carousel .carousel-item:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Agrandir Carousel */
+
+#carouselModal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#bigCarousel {
+  margin: auto;
+  display: block;
+  width: auto;
+  height: 90vh;
+}
+
+#bigCarousel .carousel-item img {
+  object-fit: contain;
+  object-position: center;
+  overflow: hidden;
+  height: 80vh;
+}
+
+/* Image du contenu principal */
+
+img {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+main img:hover {
+  opacity: 0.7;
+}
+
+/* Agrandir image */
+
+#imgModal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.img-content {
+  margin: auto;
+  display: block;
+  object-fit: contain;
+  object-position: center;
+  overflow: hidden;
+  width: 90vw;
+  max-height: 90vh;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 /* Réseaux sociaux */
@@ -150,109 +254,6 @@ body {
     inset 0 0 0px 1px #fcaf45, inset 0 0 30px 2px #fcaf45;
   transform: translateY(1px);
 }
-
-/* Carousel */
-
-#carousel .carousel-item {
-  cursor: pointer;
-}
-
-#carousel .carousel-item:hover {
-  opacity: 0.7;
-}
-
-#carousel .carousel-item img {
-  object-fit: scale-down;
-  object-position: center;
-  overflow: hidden;
-  height: 55vh;
-}
-
-#carousel .carousel-item:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-}
-
-/* Agrandir Carousel */
-
-#carouselModal {
-  display: none;
-  position: fixed;
-  z-index: 100;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-#bigCarousel {
-  margin: auto;
-  display: block;
-  width: auto;
-  height: 90vh;
-}
-
-#bigCarousel .carousel-item img {
-  object-fit: contain;
-  object-position: center;
-  overflow: hidden;
-  height: 80vh;
-}
-
-/* Image du contenu principal */
-
-img {
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-main img:hover {
-  opacity: 0.7;
-}
-
-/* Agrandir image */
-
-#imgModal {
-  display: none;
-  position: fixed;
-  z-index: 100;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-.img-content {
-  margin: auto;
-  display: block;
-  object-fit: contain;
-  object-position: center;
-  overflow: hidden;
-  width: 90vw;
-  max-height: 90vh;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@keyframes zoom {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
 /* Bouton "X" des modals */
 .close {
   position: absolute;
